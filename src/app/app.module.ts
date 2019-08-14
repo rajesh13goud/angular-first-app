@@ -9,6 +9,7 @@ import { HelloComponent } from './hello.component';
 import {ProductListComponent} from  './product-list/product-list.component';
 
 import {TopBarComponent} from './top-bar-list/top-bar.component';
+import { ProductAlertComponent } from './product-alert/product-alert.component';
 
 @NgModule({
   imports:      [ BrowserModule, ReactiveFormsModule,
@@ -16,7 +17,7 @@ import {TopBarComponent} from './top-bar-list/top-bar.component';
       { path: '', component: ProductListComponent },
     ])
      ],
-  declarations: [ AppComponent, HelloComponent,ProductListComponent, TopBarComponent ],
+  declarations: [ AppComponent, HelloComponent,ProductListComponent, TopBarComponent, ProductAlertComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
