@@ -6,9 +6,9 @@
     </a>
   </h3>
 
-  <a *ngIf="product.description">
-    Description={{product.description}}
-  </a>
+  <p *ngIf="product.description">
+    Description: {{product.description}}
+  </p>
 
   <button (click)="share()">
     Share
