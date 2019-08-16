@@ -10,14 +10,16 @@ import {ProductListComponent} from  './product-list/product-list.component';
 
 import {TopBarComponent} from './top-bar-list/top-bar.component';
 import { ProductAlertComponent } from './product-alert/product-alert.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 @NgModule({
   imports:      [ BrowserModule, ReactiveFormsModule,
   RouterModule.forRoot([
       { path: '', component: ProductListComponent },
+      {path:'products/:productId', component: ProductDetailsComponent}
     ])
      ],
-  declarations: [ AppComponent, HelloComponent,ProductListComponent, TopBarComponent, ProductAlertComponent ],
+  declarations: [ AppComponent, HelloComponent,ProductListComponent, TopBarComponent, ProductAlertComponent, ProductDetailsComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
